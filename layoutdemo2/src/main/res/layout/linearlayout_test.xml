@@ -1,0 +1,31 @@
+<?xml version="1.0" encoding="utf-8"?>
+<LinearLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    android:orientation="horizontal">
+
+    <!--先让非weight分配空间，剩下-->
+    <!--水平方向，没有左右，上下-->
+    <TextView
+        android:layout_width="0dp"
+        android:layout_height="wrap_content"
+        android:text="小二"
+        android:textSize="20sp"
+        android:background="#f00"
+        android:layout_weight="1"
+        android:layout_gravity="top"/>
+    <TextView
+        android:layout_width="0dp"
+        android:layout_height="wrap_content"
+        android:text="小二"
+        android:textSize="20sp"
+        android:background="#0f0"
+        android:layout_weight="2"/>
+    <TextView
+        android:layout_width="0dp"
+        android:layout_height="wrap_content"
+        android:text="小二"
+        android:textSize="20sp"
+        android:background="#00f"
+        android:layout_weight="1"/>
+</LinearLayout>

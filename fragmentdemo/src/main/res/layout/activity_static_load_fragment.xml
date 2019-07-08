@@ -1,0 +1,28 @@
+<?xml version="1.0" encoding="utf-8"?>
+<RelativeLayout
+    xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    android:orientation="vertical"
+    tools:context="iom.imooc.fragmentdemo.MainActivity">
+
+<!--   可以指定宽高-->
+<!--   模块化、可重用、适配屏幕、依赖act-->
+<!--   动态切换实例：add remove replace-->
+   <fragment
+       android:id="@+id/listFragment"
+       android:name="iom.imooc.fragmentdemo.ListFragment"
+       android:layout_width="100dp"
+       android:layout_height="100dp"/>
+
+<!--xml可添加多个-->
+   <fragment
+       android:id="@+id/detailFragment"
+       android:name="iom.imooc.fragmentdemo.ListFragment"
+       android:layout_centerInParent="true"
+       android:layout_width="100dp"
+       android:layout_height="100dp"/>
+
+</RelativeLayout>

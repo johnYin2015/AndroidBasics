@@ -1,0 +1,22 @@
+<?xml version="1.0" encoding="utf-8"?>
+<ScrollView xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    tools:context=".TextActivity" >
+    <!--长文本
+        android:text=""     指定文本控件的文本内容
+        android:textSize="26sp"     指定字体大小
+        android:textColor="#00ffff" 指定字体颜色
+        android:lineSpacingExtra="15dp" 行间距（具体大小）
+        android:lineSpacingMultiplier="1"   行间距（倍数）
+
+    -->
+    <TextView
+        android:layout_width="match_parent"
+        android:layout_height="match_parent"
+        android:text="@string/long_txt"
+        android:textSize="26sp"
+        android:textColor="#00ffff"
+        android:lineSpacingMultiplier="1.5"/>
+</ScrollView>

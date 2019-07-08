@@ -1,0 +1,1 @@
+include ':app', ':suanfa', ':patterndesign', ':layoutdemo2', ':layoutdemo', ':homework6_2', ':uidemo2', ':uidemo', ':constraintlayoutdemo', ':MenuDemo', ':dialogdemo', ':fragmentdemo', ':viewpagerdemo', ':vpdemo', ':imtao', ':MuTaoUpLoad'

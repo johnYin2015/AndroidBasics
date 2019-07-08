@@ -1,0 +1,115 @@
+<?xml version="1.0" encoding="utf-8"?>
+<ScrollView xmlns:android="http://schemas.android.com/apk/res/android"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent">
+
+    <LinearLayout xmlns:tools="http://schemas.android.com/tools"
+        android:layout_width="match_parent"
+        android:layout_height="match_parent"
+        android:background="@mipmap/bg"
+        android:gravity="center_horizontal"
+        android:orientation="vertical"
+        tools:context=".MainActivity">
+
+        <TextView
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_marginTop="70dp"
+            android:text="Sign Up"
+            android:textColor="#ffffff"
+            android:textSize="36sp" />
+
+        <TextView
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_margin="20dp"
+            android:gravity="center_horizontal"
+            android:text="Imooc Imooc Imooc Imooc\nImooc Imooc Imooc"
+            android:textColor="#ffffff"
+            android:textSize="28sp" />
+        <!--
+        android:src=""      指定前景图片资源
+        android:background=""   设置背景
+        -->
+        <ImageView
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:src="@mipmap/add_photo" />
+
+        <!--<ImageButton-->
+        <!--android:layout_width="wrap_content"-->
+        <!--android:layout_height="wrap_content"-->
+        <!--android:src="@mipmap/add_photo"/>-->
+        <!--
+        android:inputType       输入类型
+        textPassword    密码
+        number          只能正整数
+        numberSigned    整数
+        numberDecimal   小数
+        -->
+        <ProgressBar
+            android:id="@+id/pro_bar"
+            style="?android:attr/progressBarStyleHorizontal"
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:layout_margin="10dp"
+            android:visibility="invisible" />
+
+        <EditText
+            android:id="@+id/name"
+            android:layout_width="match_parent"
+            android:layout_height="68dp"
+            android:layout_marginLeft="30dp"
+            android:layout_marginRight="30dp"
+            android:background="@mipmap/border"
+            android:gravity="center"
+            android:hint="Name and Surname"
+            android:textColorHint="#cccccc" />
+
+        <EditText
+            android:layout_width="match_parent"
+            android:layout_height="68dp"
+            android:layout_marginLeft="30dp"
+            android:layout_marginTop="25dp"
+            android:layout_marginRight="30dp"
+            android:background="@mipmap/border"
+            android:gravity="center"
+            android:hint="Email Address"
+            android:textColorHint="#cccccc" />
+
+        <EditText
+            android:layout_width="match_parent"
+            android:layout_height="68dp"
+            android:layout_marginLeft="30dp"
+            android:layout_marginTop="25dp"
+            android:layout_marginRight="30dp"
+            android:background="@mipmap/border"
+            android:gravity="center"
+            android:hint="Phone"
+            android:textColorHint="#cccccc" />
+
+        <EditText
+            android:id="@+id/pwd"
+            android:layout_width="match_parent"
+            android:layout_height="68dp"
+            android:layout_marginLeft="30dp"
+            android:layout_marginTop="25dp"
+            android:layout_marginRight="30dp"
+            android:background="@mipmap/border"
+            android:gravity="center"
+            android:hint="Password"
+            android:inputType="textPassword"
+            android:maxLength="12"
+            android:textColorHint="#cccccc" />
+
+        <Button
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:layout_marginLeft="30dp"
+            android:layout_marginTop="40dp"
+            android:layout_marginRight="30dp"
+            android:background="@mipmap/btn"
+            android:onClick="register"
+            android:text="Register" />
+    </LinearLayout>
+</ScrollView>

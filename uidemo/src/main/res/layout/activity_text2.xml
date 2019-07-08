@@ -1,0 +1,83 @@
+<?xml version="1.0" encoding="utf-8"?>
+<LinearLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    android:orientation="vertical" android:layout_width="match_parent"
+    android:layout_height="match_parent">
+
+    <!--
+        android:lines=""        设置行数
+        android:single="true"   设置单行
+        android:ellipsize=""    设置省略号
+        android:focusable="true" 设置可以获取焦点
+        android:focusableInTouchMode="true"设置在触摸时获取焦点
+        android:marqueeRepeatLimit="marquee_forever" 设置跑马灯持续运行
+
+    -->
+    <TextView
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:text="@string/long_txt"
+        android:singleLine="true"
+        android:ellipsize="marquee"
+        android:focusable="true"
+        android:focusableInTouchMode="true"
+        android:marqueeRepeatLimit="marquee_forever"/>
+
+    <TextView
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:text="含html标签的文本"
+        android:layout_marginTop="20dp"
+        android:layout_marginBottom="10dp"
+        android:background="#cccccc"/>
+
+    <TextView
+        android:id="@+id/html_txt"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content" />
+
+    <TextView
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:text="带链接动作、自定义样式的文本"
+        android:layout_marginTop="20dp"
+        android:layout_marginBottom="10dp"
+        android:background="#cccccc"/>
+
+    <TextView
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:text="13977889900"
+        android:autoLink="phone"/>
+
+    <TextView
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:text="www.baidu.com"
+        android:autoLink="web"/>
+
+    <TextView
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:text="13977889900\nwww.baidu.com"
+        android:autoLink="all"/>
+    <!--
+        android:id=""
+        @+id/xx     为控件指定id
+        @id/xx      引用一个id(相对布局)
+    -->
+    <TextView
+        android:id="@+id/auto_link_txt"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content" />
+
+    <TextView
+        android:id="@+id/move_txt"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content" />
+
+    <TextView
+        android:id="@+id/style_txt"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content" />
+
+</LinearLayout>
